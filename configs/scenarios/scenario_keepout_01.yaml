@@ -1,0 +1,13 @@
+scenario_id: "scenario_keepout_01"
+grid_size: [10, 10]
+start: [0, 0]
+goal: [9, 9]
+obstacles:
+  - [4, 4]
+  - [6, 6]
+keepout_zones:
+  - [0, 5]
+  - [0, 6]
+  - [1, 9]
+  - [2, 9]
+battery_budget: 25

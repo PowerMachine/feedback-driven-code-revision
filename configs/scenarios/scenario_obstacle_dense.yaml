@@ -1,0 +1,21 @@
+scenario_id: "scenario_obstacle_dense"
+grid_size: [10, 10]
+start: [0, 0]
+goal: [9, 9]
+obstacles:
+  - [4, 4]
+  - [6, 6]
+  - [2, 3]
+  - [5, 2]
+  - [7, 4]
+  - [3, 7]
+  - [5, 8]
+  - [8, 5]
+keepout_zones:
+  - [0, 5]
+  - [0, 6]
+  - [0, 7]
+  - [1, 9]
+  - [2, 9]
+  - [3, 9]
+battery_budget: 28

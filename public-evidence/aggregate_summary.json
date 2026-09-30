@@ -1,0 +1,224 @@
+{
+  "aggregates": [
+    {
+      "scenario_id": "scenario_battery_tight",
+      "patcher": "deterministic",
+      "runs": 10,
+      "improved_rate": 0.5,
+      "keepout_delta_mean": 0.8,
+      "keepout_delta_stdev": 0.8717797887081347,
+      "path_delta_mean": 0.0,
+      "path_delta_stdev": 0.0,
+      "baseline_success_rate": 1.0,
+      "patched_success_rate": 1.0,
+      "llm_fallback_count": 0,
+      "unique_patch_signatures": 2,
+      "total_patches": 10,
+      "signature_diversity": 0.2,
+      "per_constant_stats": {
+        "LOW_BATTERY_PENALTY": {
+          "n": 10,
+          "mean": 80.0,
+          "stdev": 0.0,
+          "min": 80.0,
+          "max": 80.0
+        },
+        "KEEP_OUT_PENALTY": {
+          "n": 5,
+          "mean": 300.0,
+          "stdev": 0.0,
+          "min": 300.0,
+          "max": 300.0
+        }
+      }
+    },
+    {
+      "scenario_id": "scenario_battery_tight",
+      "patcher": "llm_qwen",
+      "runs": 10,
+      "improved_rate": 0.5,
+      "keepout_delta_mean": 0.6,
+      "keepout_delta_stdev": 1.2,
+      "path_delta_mean": 0.0,
+      "path_delta_stdev": 0.0,
+      "baseline_success_rate": 1.0,
+      "patched_success_rate": 1.0,
+      "llm_fallback_count": 1,
+      "unique_patch_signatures": 9,
+      "total_patches": 10,
+      "signature_diversity": 0.9,
+      "per_constant_stats": {
+        "LOW_BATTERY_PENALTY": {
+          "n": 6,
+          "mean": 446.6666666666667,
+          "stdev": 219.5955878933414,
+          "min": 80.0,
+          "max": 800.0
+        },
+        "RISK_WEIGHT": {
+          "n": 6,
+          "mean": 2.1666666666666665,
+          "stdev": 0.37267799624996495,
+          "min": 2.0,
+          "max": 3.0
+        },
+        "KEEP_OUT_PENALTY": {
+          "n": 5,
+          "mean": 101.0,
+          "stdev": 103.94229168149026,
+          "min": 5.0,
+          "max": 300.0
+        },
+        "REPLAN_THRESHOLD": {
+          "n": 3,
+          "mean": 2.6666666666666665,
+          "stdev": 0.9428090415820634,
+          "min": 2.0,
+          "max": 4.0
+        }
+      }
+    },
+    {
+      "scenario_id": "scenario_keepout_01",
+      "patcher": "deterministic",
+      "runs": 10,
+      "improved_rate": 0.1,
+      "keepout_delta_mean": 0.1,
+      "keepout_delta_stdev": 0.30000000000000004,
+      "path_delta_mean": 0.0,
+      "path_delta_stdev": 0.0,
+      "baseline_success_rate": 1.0,
+      "patched_success_rate": 1.0,
+      "llm_fallback_count": 0,
+      "unique_patch_signatures": 2,
+      "total_patches": 10,
+      "signature_diversity": 0.2,
+      "per_constant_stats": {
+        "KEEP_OUT_PENALTY": {
+          "n": 1,
+          "mean": 300.0,
+          "stdev": 0.0,
+          "min": 300.0,
+          "max": 300.0
+        }
+      }
+    },
+    {
+      "scenario_id": "scenario_keepout_01",
+      "patcher": "llm_qwen",
+      "runs": 10,
+      "improved_rate": 0.1,
+      "keepout_delta_mean": 0.1,
+      "keepout_delta_stdev": 0.30000000000000004,
+      "path_delta_mean": 0.0,
+      "path_delta_stdev": 0.0,
+      "baseline_success_rate": 1.0,
+      "patched_success_rate": 1.0,
+      "llm_fallback_count": 2,
+      "unique_patch_signatures": 3,
+      "total_patches": 10,
+      "signature_diversity": 0.3,
+      "per_constant_stats": {
+        "KEEP_OUT_PENALTY": {
+          "n": 2,
+          "mean": 5.0,
+          "stdev": 0.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "LOW_BATTERY_PENALTY": {
+          "n": 1,
+          "mean": 50.0,
+          "stdev": 0.0,
+          "min": 50.0,
+          "max": 50.0
+        },
+        "RISK_WEIGHT": {
+          "n": 1,
+          "mean": 2.0,
+          "stdev": 0.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      }
+    },
+    {
+      "scenario_id": "scenario_obstacle_dense",
+      "patcher": "deterministic",
+      "runs": 10,
+      "improved_rate": 0.5,
+      "keepout_delta_mean": 1.4,
+      "keepout_delta_stdev": 1.7435595774162693,
+      "path_delta_mean": 0.2,
+      "path_delta_stdev": 0.6000000000000001,
+      "baseline_success_rate": 1.0,
+      "patched_success_rate": 1.0,
+      "llm_fallback_count": 0,
+      "unique_patch_signatures": 3,
+      "total_patches": 10,
+      "signature_diversity": 0.3,
+      "per_constant_stats": {
+        "KEEP_OUT_PENALTY": {
+          "n": 5,
+          "mean": 300.0,
+          "stdev": 0.0,
+          "min": 300.0,
+          "max": 300.0
+        },
+        "RISK_WEIGHT": {
+          "n": 2,
+          "mean": 1.8,
+          "stdev": 0.0,
+          "min": 1.8,
+          "max": 1.8
+        }
+      }
+    },
+    {
+      "scenario_id": "scenario_obstacle_dense",
+      "patcher": "llm_qwen",
+      "runs": 10,
+      "improved_rate": 0.3,
+      "keepout_delta_mean": 1.1,
+      "keepout_delta_stdev": 1.8138357147217055,
+      "path_delta_mean": 0.0,
+      "path_delta_stdev": 0.0,
+      "baseline_success_rate": 1.0,
+      "patched_success_rate": 1.0,
+      "llm_fallback_count": 1,
+      "unique_patch_signatures": 6,
+      "total_patches": 10,
+      "signature_diversity": 0.6,
+      "per_constant_stats": {
+        "KEEP_OUT_PENALTY": {
+          "n": 6,
+          "mean": 44.166666666666664,
+          "stdev": 42.56530929707378,
+          "min": 5.0,
+          "max": 100.0
+        },
+        "OBSTACLE_NEAR_PENALTY": {
+          "n": 2,
+          "mean": 10.0,
+          "stdev": 5.0,
+          "min": 5.0,
+          "max": 15.0
+        },
+        "LOW_BATTERY_PENALTY": {
+          "n": 2,
+          "mean": 80.0,
+          "stdev": 70.0,
+          "min": 10.0,
+          "max": 150.0
+        },
+        "RISK_WEIGHT": {
+          "n": 4,
+          "mean": 2.0,
+          "stdev": 0.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      }
+    }
+  ]
+}

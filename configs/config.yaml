@@ -1,0 +1,27 @@
+defaults:
+  - _self_
+
+project:
+  name: rp_llm
+  seed: 7
+
+runtime:
+  max_steps: 120
+  fault_threshold: 0.75
+  verified_only: true
+
+critic:
+  window: 20
+  safety_hi: 0.8
+  internal_hi: 0.8
+  uncertainty_hi: 0.7
+  env_hi: 0.65
+  context_hi: 0.65
+  performance_hi: 0.7
+
+patching:
+  max_retry: 2
+  allowed_operators: [param_patch, rule_patch, skill_patch, code_patch]
+
+report:
+  output_root: artifacts/reports
